@@ -1,4 +1,4 @@
-FROM debian:sid
+FROM debian:jessie
 
 MAINTAINER Ask Holme <ask@askholme.dk
 

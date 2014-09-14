@@ -16,6 +16,7 @@ chmod 700 /etc/container_environment
 chmod 600 /etc/container_environment.sh /etc/container_environment.json
 
 ## Install runit.
+touch /etc/inittab
 $minimal_apt_get_install runit
 
 ## Install a syslog daemon.
@@ -38,3 +39,4 @@ cp /build/runit/cron /etc/service/cron/run
 #rm -f /etc/cron.daily/standard
 
 $minimal_apt_get_install anacron
+$minimal_apt_get_install salt-minion
