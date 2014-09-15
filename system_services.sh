@@ -39,4 +39,4 @@ cp /build/runit/cron /etc/service/cron/run
 #rm -f /etc/cron.daily/standard
 
 $minimal_apt_get_install anacron
-$minimal_apt_get_install salt-minion
+$minimal_apt_get_install salt-minion sudo
